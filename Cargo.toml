@@ -1,0 +1,8 @@
+[package]
+name = "Byke"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[dependencies]
+leptos = { version = "0.6.12", default-features = false, features = ["csr"] }
