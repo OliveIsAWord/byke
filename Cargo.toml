@@ -6,3 +6,10 @@ license = "MIT"
 
 [dependencies]
 leptos = { version = "0.6.12", default-features = false, features = ["csr"] }
+# wee_alloc = "0.4.5" # this would win us a handful of KB in binary size
+
+[profile.release]
+opt-level = "z"
+strip = "symbols"
+lto = "fat"
+codegen-units = 1
